@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--archivo de css-->
+    <link rel="stylesheet" href="style.css">
+    <!--archivo de bootsrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    <!--archivo de javascript-->
+    <script defer src="main.js"></script>
+
+    <!--icono de pagina-->
+    <link rel="icon" href="images/bunnyico.ico">
+    <title>NewJeans</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg degradado">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.webp" alt="logo" width="300" height="auto"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#news">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">PROFILE</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MEDIA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="music.html">DISCOGRAPHY</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                  <li><a class="dropdown-item" href="">MUSIC VIDEOS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://weverseshop.io/en/shop/US_USD/artists/82/categories/1757">SHOP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="bong">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWxoeXdqZjRscmoyaWZsbGFuazBhZ2Z5NGltbXRtemJjZXFjbWdhMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/fxKaHlVsVafMZC0sjK/giphy.gif"
+         alt="bunnybong">
+      </div>
+
+      <!--main photo-->
+      <div class="container-fluid main">
+        <img src="images/newjeansmain.jpg" alt="">
+      </div>
+
+      <!--news-->
+      <div id="news" class="container-fluid newstitle">
+        <h2><span style="font-size: 50px;">&#10023;</span> NEWS <span style="font-size: 50px;">&#10023;</span></h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 news">
+            <img src="https://pbs.twimg.com/media/F0aL2x6aIAEohNz?format=png&name=900x900" 
+            alt="newsmerch">
+            <h3>NewJeans Resale Merchandise</h3>
+            <div id="contenido">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur mollis ante, quis mollis lorem porttitor hendrerit. Mauris in dolor at nulla convallis interdum. Suspendisse.</p>
+            </div>
+              <button onclick='muestra_oculta("contenido")' class="newsbtn" role="button" form="contenido">+</button>
+          </div>
+
+          <div class="col-md-4 news">
+            <img src="https://pbs.twimg.com/media/FykqNhaaYAEPbNN?format=png&name=900x900" 
+            alt="newsbuncamp">
+            <h3>NewJeans 1st Fan Meeting 'Bunnies Camp'</h3>
+            <div id="contenido2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur mollis ante, quis mollis lorem porttitor hendrerit. Mauris in dolor at nulla convallis interdum. Suspendisse.</p>
+            </div>
+            <button onclick='muestra_oculta("contenido2")' class="newsbtn" role="button" form="contenido2">+</button>
+          </div>
+
+          <div class="col-md-4 news">
+            <img src="https://pbs.twimg.com/media/FsxFCFYagAAco9P?format=png&name=900x900" 
+            alt="newslgst">
+            <h3>NewJeans Official Light Stick</h3>
+            <div id="contenido3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur mollis ante, quis mollis lorem porttitor hendrerit. Mauris in dolor at nulla convallis interdum. Suspendisse.</p>
+            </div>
+            <button onclick='muestra_oculta("contenido3")' class="newsbtn" role="button" form="contenido3">+</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!--anuncios-->
+      <div class="container bday">
+        <div class="row">
+          <div class="col-md-4 bdaygifs">
+            <img src="https://media.giphy.com/media/nQwvVRQVuPblXBjYVk/giphy.gif" alt="" class="bday2">
+          </div>
+          <div class="col-md-4">
+            <img src="./images/nwjnsdayy.jpg" alt="" class="bday1">
+          </div>
+          <di class="col-md-4 bdaygifs">
+            <img src="https://media.giphy.com/media/nQwvVRQVuPblXBjYVk/giphy.gif" alt="" class="bday2">
+          </di>
+        </div>
+      </div>
+
+      <!-- profile -->
+      <div class="container profile-hero">
+        <div class="p-5 text-center bg-image">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="profile-text">
+              <h2 class="mb-3"><span style="font-size: 50px;">&#10023;</span>PROFILE<span style="font-size: 50px;">&#10023;</span></h2>
+              <p class="mb-3">Who's this? 우릴 봐 NewJeans<br>So fresh, so clean!</p>
+               <a class="btn btn-outline-light btn-lg" href="profile.html" role="button">More Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--new release-->
+      <div class="container-fluid mvrel-title">
+        <h2><span style="font-size: 50px;">&#10023;</span> NEW M/V RELEASE <span style="font-size: 50px;">&#10023;</span></h2>
+      </div>
+
+      <div class="container container-mv">
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/nJDMAjwxthM?start=68?&autoplay=1" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen></iframe>
+      </div>
+
+
+    </main>
+
+    <footer>
+      <p>© 2023 <a href="https://ador.world/">ADOR</a>. All Rights Reserved. Site by BINI.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

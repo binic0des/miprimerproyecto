@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.degradado {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.0845588235294118) 0%, rgba(176,143,205,0.0845588235294118) 16%, rgba(176,143,205,0.5411414565826331) 100%);
+}
+header li{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+.title {
+    margin-top: 50px;
+}
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-family: 'VT323', monospace;;
+}
+
+.nwjns-gallery {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    color: rgb(161, 161, 215);
+}
+footer a {
+    color: rgb(161, 161, 215);
+    text-decoration: none;
+}
+footer a:hover {
+    color:#5900c6;
+    font-weight: 500; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
